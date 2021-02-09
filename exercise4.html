@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="name">Name</label>
+            </br>
+            <input type="text" id="name" class="name" minlength="5" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            </br>
+            <input type="password" id="password" class="password" minlength="6" maxlength="15" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            </br>
+            <input type="email" id="email" class="email" required>
+        </p>
+        <p>
+            <label for="aboutMe">About me</label>
+            </br>
+            <textarea id="aboutMe" class="aboutMe" maxlength="250"></textarea>
+        </p>
+        <p>
+            <label for="robotCheck">Please type: <b>80423</b></label>
+            </br>
+            <input type="text" id="robotCheck" class="robotCheck" pattern="80423" title="Please enter: 80423" required>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
