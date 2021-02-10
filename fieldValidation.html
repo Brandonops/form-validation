@@ -29,19 +29,16 @@
 
 
     <script>
-        const form = document.querySelector("form")
-
-        form.addEventListener("submit", (e) => {
             const usernameInput = document.querySelector("#username");
             const passwordInput = document.querySelector("#password");
-            console.log(passwordInput.value);
-            console.log(usernameInput.value);
-            if (passwordInput.value.includes(usernameInput.value)) {
-                e.preventDefault();
-                alert("can't do that");
-            }
 
-        })
+            passwordInput.addEventListener("change", (e) => {
+                if (passwordInput.value.includes(usernameInput.value)) {
+                    passwordInput.setCustomValidity("Don't include username in password");
+                } else {
+                    passwordInput.setCustomValidity("");
+                }
+            })
     </script>
 </body>
 </html>
